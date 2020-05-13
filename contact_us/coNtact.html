@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CONTACT US</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span>CONT</span>ACT US</h1>
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+        <h2>E-TRACKER</h2>
+      
+      
+        <!--creating a info of e tracker aur social media lnks contactdetails address-->
+        <ul><i>&nbsp&nbsp &nbspContact Details</i>
+          <li><i class="fa fa-phone"></i>+91-45445444</li>
+          <li><i class="fa fa-road"></i> MNNIT Allahabad<br>&nbsp&nbsp&nbsp&nbsp&nbspTeliarganj<br>&nbsp&nbsp&nbsp&nbsp&nbspPin Code: 211002</li>
+          <br><i>&nbsp&nbsp&nbsp&nbspSupport</i>
+          <li><i class="fa fa-envelope"></i>e-tracker@gmail.com</li>
+          <br><i></i>&nbsp&nbsp&nbsp&nbspSocial<br>
+         <!--social media -->
+         <a href="#"> <li class="social" style="color:blue;"> <i class="fab fa-facebook-square"></i></li></a>
+         <a href="#"> <li class="social" style="color: #131418;"> <i class="fab fa-github"></i></li></a>
+         <a href="#"> <li class="social " style="color: #0077B5;"> <i class="fab fa-linkedin" ></i></li></a>
+         <a href="#"> <li class="social" style="color: #e4405f;"> <i class="fab fa-instagram"></i></li></a>
+         <a href="#"> <li class="social" style="color: #55acee;"> <i class="fab fa-twitter"></i></li></a>
+         
+        </ul>
+      </div>
+
+
+      <!--creating second div for getting msg-->
+      <div class="contact">
+        <h3>Email Us</h3>
+        <div class="alert">your message has been sent</div>
+        <form id="contactform">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Company</label>
+            <input type="text" name="company" id="company" required>
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email">
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="number" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--linking firebase script-->
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-storage.js"></script>
+
+  <script src="contact.js"></script>
+</body>
+</html>
