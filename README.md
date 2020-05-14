@@ -17,7 +17,7 @@ Through this app, the user can update his info like his earnings and expenses wh
 
 ## *TECH STACK*
 
-Frontend:
+Frontend::
 •	HTML
 •	CSS
 •	Bootstrap
