@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Expense Manager</title>
+<link rel="stylesheet" href="it.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">        
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section>
+<div class="wave">
+</div>
+</section>
+    
+
+    
+<h1 style="text-align: center; color: blue">SAVE MONEY AND RULE THE WORLD</h1>
+    <!---------CONTACT------------>
+<section id="contact">
+<div class="container">
+    <form class="contact-form" id="addform">
+<div  class="row">
+<div class="col-md-6">
+    
+        <div class="form-group">
+        <label for="fname"> Name</label>
+        <input type="text" class="form-control" placeholder="Enter your name" id="name"> 
+        </div>
+        <div class="form-group">
+        <label for="fname">Purpose</label>
+        <input type="text" class="form-control" placeholder="Enter your purpose" id="purpose"> 
+        </div>
+        <div class="form-group">
+        <label for="fname">Address</label>
+        <input type="text" class="form-control" placeholder="Enter your Address" id="address"> 
+        </div>
+        <div class="form-group">
+        <label for="fname">Phone Number</label>
+        <input type="number" class="form-control" placeholder="Enter your mobile number" id="phone"> 
+        </div>
+        <div class="form-group">
+        <label for="fname">Category</label>
+        <input type="text" class="form-control" placeholder="Enter category" id="category"> 
+        </div>
+        <div class="form-group">
+        <label for="fname">Payment Mode</label>
+        <input type="text" class="form-control" placeholder="Enter paymemt mode" id="mode"> 
+        </div>
+</div> 
+<div class="col-md-6"> 
+   
+        <div class="form-group">
+        <label for="fname">Amount</label>
+        <input type="number" class="form-control" placeholder="Enter Amount" id="amount"> 
+        </div>
+        <div class="form-group">
+        <label for="fname">Bank Name</label>
+        <input type="text" class="form-control" placeholder="Enter Bank Name" id="bank"> 
+        </div>
+        <div class="form-group">
+        <label for="fname">Branch Nmae</label>
+        <input type="text" class="form-control" placeholder="Enter Branch Name" id="branch"> 
+        </div>
+        <div class="form-group">
+        <label for="fname">Check or DD or NEFT Reg. No:</label>
+        <input type="text" class="form-control" placeholder="Enter Check or DD or NEFT Reg. No" id="cheque"> 
+        </div>
+        <div class="form-group">
+        <label for="fname">Description</label>
+        <input type="text" class="form-control" placeholder="Enter Discription" id="description"> 
+        </div>
+        <div class="form-group">
+        <label for="fname">Date</label>
+        <input type="date" class="form-control" placeholder="Enter date" id="dates"> 
+        </div>
+</div>
+    <div class="text-center">
+    <button type="submit" class="btn btn-primary">Add Expense</button>
+    </div>
+            
+ 
+    </div>  
+         </form>
+
+
+         <table>
+          <thead>
+            <tr>
+              <th>
+                name
+              </th>
+              <th>
+               amount
+              </th>
+              <th>
+                category
+              </th>
+              <th>purpose</th>
+              <th>branch</th>
+              <th>bank</th>
+              <th>dates</th>
+              <th>cheque</th>
+              <th>mode</th>
+              <th>address</th>
+              <th>description</th>
+              <th>mode</th>
+            </tr>
+          </thead>
+          <tbody id="table_bdy"></tbody>
+        </table>
+    </div>
+    </section>
+    
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBvNo5xwEqRUCzbRHguiY-yBqPmmLVOdug",
+    authDomain: "add-form-f2e24.firebaseapp.com",
+    databaseURL: "https://add-form-f2e24.firebaseio.com",
+    projectId: "add-form-f2e24",
+    storageBucket: "add-form-f2e24.appspot.com",
+    messagingSenderId: "901908221450",
+    appId: "1:901908221450:web:c0c63928bbec58f17519f3",
+    measurementId: "G-CD30591CC2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="main.js"> </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+*{
+box-sizing:border-box;
+font-family: 'Lato', sans-serif;
+}
+body{
+margin: 0;
+padding:0;
+background: #fff;
+}
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+*{margin:0px;
+padding: 0;
+text-decoration: none;
+}
+section
+{
+position: relative;
+width: 100%;
+height: 50vh;
+background: -webkit-linear-gradient(left,#0000FF,#7EC8E3);
+}
+
+section .wave{
+position: absolute;
+width: 100%;
+height: 143px;
+bottom: 0;
+left:0;
+background: url("wave.png");
+animation: animate 10s linear infinite;
+}
+section .wave:before{
+content: '';
+width: 100%;
+height: 143px;
+background: url("wave.png");
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0.4;
+animation: animate-reverse 10s linear infinite;
+}
+section .wave:after{
+content: '';
+width: 100%;
+height: 143px;
+background: url("wave.png");
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0.6;
+animation-delay: -5s;
+animation: animate 20s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+	background-position: 0;
+    }
+    100%
+    {
+	background-position: 1360px;
+    }
+}
+@keyframes animate-reverse
+{
+    0%
+    {
+	background-position: 1360px;
+    }
+    100%
+    {
+	background-position:0;
+    }
+}
+
+.text{
+text-align: center;
+font-size: 50px;
+}
+.sidebar{
+position: fixed;
+left: -240px;
+width: 240;
+height: 100%;
+background:#1e1e1e;
+transition: all .5s ease;
+margin-top: 0px;
+
+
+
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    height: 65px;
+    width:100%;
+
+    line-height:65px;
+    padding-left:30px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    border-top: 1px solid black;
+    border-left: 5px solid transparent;
+    box-sizing:border-box;
+    transition: all .5s ease;
+    font-family: 'open sans',sans-serif;
+}
+a:hover, a.active
+{
+    border-left: 5px solid #b93632;
+    color: #b93632;
+   
+}
+.sidebar a i{
+font-size: 23px;
+margin-right: 16px;
+
+
+}
+.sidebar a span{
+letter-spacing: 1px;
+text-transform: uppercase;
+
+}
+#check {
+    display: none;
+}
+label #btn, label #cancel
+{
+
+    position: fixed;
+    cursor: pointer;
+    background: #000000;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    border-radius: 5px;
+    margin: 15px 30px;
+    margin-top: 5px;
+    border: 1px solid #262626;
+    transition: all .5s ease;
+
+}
+label #cancel
+{
+    opacity: 0;
+    visibility: hidden;
+}
+#check:checked ~ label #btn{
+    margin-left: 245px;
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #cancel{
+    margin-left: 245px;
+    margin-top: 10px;
+    opacity: 1;
+    visibility: visible;
+    
+}
+#check:checked ~ .sidebar{
+    left: 0;
+    margin-top: 10px;
+}
+@media (max-width:860px){
+    .sidebar{
+
+        height: auto;
+        width:70px;
+        left:0;
+        margin: 100px 0;
+        margin-top: 15px;
+    }
+     #btn,#cancel{
+        display: none;
+    }
+    span{
+position: absolute;
+margin-left: 23px;
+opacity: 0;
+visibility: hidden;
+
+
+    }
+    .sidebar a i{
+        margin-left: -10px;
+    }
+    a:hover{
+        width:200px;
+background: inherit;
+    }
+    .sidebar a:hover span{
+        opacity:1 ;
+        visibility: visible;
+    }
+   
+
+    
+        
+}
+
+
+
+
+
