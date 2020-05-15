@@ -28,19 +28,3 @@ Backend:
 
 
 
-![](image/Screenshot%20(103).png)
-
--------------------------
-
-
-# COVID-19
-*though a economic tracker website but also contains information regarding the panademic which the world is facing right now*
-
-
-![](image/Screenshot%20(104).png)
-
--------------------------
-
-
-![](image/Screenshot%20(105).png)
-
