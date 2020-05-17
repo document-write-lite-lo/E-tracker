@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom CSS -->
+   <link rel="stylesheet" href="signinn.css">
+    <!-- Nunito Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+
+        <!--cdn of fontawesome-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <title>Log in </title>
+</head>
+<body class="body">
+
+
+<div class="container">
+   <h1 class="brand"><span>E-</span>TRACKER</h1>
+   <br><br>
+    <div class="wrapper">
+          <div class="company-info">
+      
+              <!--creating a info of e tracker aur social media links contactdetails address-->
+              <ul><i>&nbsp&nbsp &nbspContact Details</i>
+                <li><i class="fa fa-phone"></i>+91-45445444</li>
+                <li><i class="fa fa-road"></i> MNNIT Allahabad<br>&nbsp&nbsp&nbsp&nbsp&nbspTeliarganj<br>&nbsp&nbsp&nbsp&nbsp&nbspPin Code: 211002</li>
+                <br><i>&nbsp&nbsp&nbsp&nbspSupport</i>
+                <li><i class="fa fa-envelope"></i>e-tracker@gmail.com</li>
+                <br><i></i>&nbsp&nbsp&nbsp&nbspSocial<br>
+              
+              
+              <!--social media contact of e tracker-->
+              <a href="#"> <li class="social" style="color:blue;"> <i class="fab fa-facebook-square"></i></li></a>
+              <a href="#"> <li class="social" style="color: #131418;"> <i class="fab fa-github"></i></li></a>
+              <a href="#"> <li class="social " style="color: #0077B5;"> <i class="fab fa-linkedin" ></i></li></a>
+              <a href="#"> <li class="social" style="color: #e4405f;"> <i class="fab fa-instagram"></i></li></a>
+              <a href="#"> <li class="social" style="color: #55acee;"> <i class="fab fa-twitter"></i></li></a>
+              
+              </ul>
+          </div>      
+           <div class="contact" id="details">     
+                          <h2 class="h2 text-center text-dark mb-3">Sign In</h2>
+                        
+                          
+                            <div class="form-group">
+                                <label for="userSIEmail">Email adress<span class="text-danger ml-1">*</span></label>
+                                <input type="email" class="form-control" id="userSIEmail" placeholder="mail@mail.com">
+                                <small id="userSIEmailError" class="form-text text-danger">Please check your login information.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="userSIPassword">Password<span class="text-danger ml-1">*</span></label>
+                                <input type="password" class="form-control" id="userSIPassword"  placeholder="password">
+                                <small id="userSIPasswordError" class="form-text text-danger">Please check your password.</small>
+                            </div>
+                            <button type="button" class="btn btn-outline-primary text-uppercase mb-3" onclick="signIn()">Sign In</button>
+                            <p>Not a member yet? Become a member: <a href="signup.html"><strong class="text-primary text-uppercase showSignUpForm">Sign Up</strong></a></p>
+           </div>
+    </div>
+</div>
+
+
+    
+    <!-- Firebase -->
+   <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-storage.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script></head>
+
+
+  
+
+
+
+
+    <!-- Custom JavaScript -->
+    <script src="signin.js"></script>
+
+</body>
+</html>
