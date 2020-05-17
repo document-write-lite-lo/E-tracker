@@ -4,11 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="homeee.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
-    congrats
-    
-</body>
-<script src="index.js"></script>
 
+
+
+    <div>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="sidebar">
+    
+            <a class="active" href="#"><i class="fas fa-qrcode"></i><span>Dashboard</span></a>
+            <a href="#"><i class="fas fa-chart-bar"></i><span>Home</span></a>
+            <a href="#"><i class="fas fa-rupee-sign"></i><span>Statistics</span></a>
+            <a href="#"><i class="fas fa-user-plus"></i><span>Tourism Add</span></a>
+            <a href="#"><i class="fas fa-hand-holding-usd"></i><span>Health</span></a>
+            <a href="#"><i class="fas fa-user-friends"></i><span>Education</span></a>
+            <a href="#"><i class="fas fa-envelope"></i><span>CONTACT US</span></a>
+             <a href="#"><i class="fas fa-blog"></i><span>Web Team</span></a>
+            
+        </div>
+    
+    
+    </div>
+       <div class="inc">            <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-info mx-3 " data-toggle="modal" data-target="#exampleModal">
+       ADD Annual record
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add Income</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+                Enter your income<input type="number" class="form-control" placeholder="Enter your income"  id="inc2">
+                Statistics of year
+                <input type="number" class="form-control" placeholder="Enter your expense for january"  id="expjan">
+                <input type="number" class="form-control" placeholder="Enter your expense for february"  id="expfeb">
+                <input type="number" class="form-control" placeholder="Enter your expense for march"  id="expmar">
+                <input type="number" class="form-control" placeholder="Enter your expense for april"  id="expapr">
+                <input type="number" class="form-control" placeholder="Enter your expense for may"  id="expmay">
+                <input type="number" class="form-control" placeholder="Enter your expense for june"  id="expjune">
+                <input type="number" class="form-control" placeholder="Enter your expense for july"  id="expjuly">
+                <input type="number" class="form-control" placeholder="Enter your expense for august"  id="expaug">
+                <input type="number" class="form-control" placeholder="Enter your expense for september"  id="expsep">
+                <input type="number" class="form-control" placeholder="Enter your expense for october"  id="expoct">
+                <input type="number" class="form-control" placeholder="Enter your expense for november"  id="expnov">
+                <input type="number" class="form-control" placeholder="Enter your expense for december"  id="expdec">
+            
+            </div>
+            <div class="modal-footer">
+            
+              <button type="submit" class="btn btn-primary" onclick="submit2()" >Submit</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+        </div>
+    </div>
+    
+
+
+<br>
+<br>
+<br>
+<br>
+    <div class="mx-5 ">
+        <div class="row mt-3 ">
+            <div class="col-md-4">
+    
+                <div id="form1" class="border border-success p-4" style="background: rgb(34, 139, 34); opacity: 0.8;">
+                    <div class="form-group">
+                            <label >budget</label>
+                            <input type="number" class="form-control" id="inc" >
+                    </div>
+                    
+    
+    
+                </div>
+    <br>
+                <div id="form2" class="border border-danger p-4" style="background:  #FF6347; opacity: 1;">
+                    <div class="form-group">
+                            <label >expenses</label>
+                            <input type="number" class="form-control" id="exp" >
+                    </div>
+                    
+                    
+    
+                </div>
+                <br>
+                
+                <button type="submit" class="btn btn-danger " onclick="submit()">ADD</button>
+                
+            </div>
+    
+            <div id="chart" class="col-md-8" style="background:#AFEEEE;">
+    
+                
+            </div>
+        </div>
+    
+        <div class="row mx-auto mt-3" style="font-size: 4rem;">
+            <div class="col-4">
+                <div style="width: 18rem;" class="card">
+                        <div class="card-body">
+                            <h5>budget</h5>
+                            <i style="color: blue;" class="fas fa-rupee-sign"></i>
+                            <span id="budget"></span>
+                        </div>
+                </div>
+    
+            </div>
+            <div class="col-4">
+                <div style="width: 18rem;" class="card">
+                        <div class="card-body">
+                            <h5>expenses</h5>
+                            <i style="color: red;" class="fas fa-rupee-sign"></i>
+                            <span id="expenses"></span>
+                        </div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="col-4">
+                <div style="width: 18rem;" class="card">
+                        <div class="card-body">
+                            <h5>Savings</h5>
+                            <i style="color: green;" class="fas fa-rupee-sign"></i>
+                            <span id="total"></span>
+                        </div>
+                </div>
+    
+            </div>
+    
+    
+        </div>
+    </div>
+    
+   
+        
+<br>
+<br>
+<br>
+<br>
+   
+
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-storage.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script></head>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+<script src="home.js"></script>
+</body>
 </html>
+
+
