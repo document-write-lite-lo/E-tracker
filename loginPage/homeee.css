@@ -35,8 +35,7 @@ z-index: 1;
 /*a:hover, a.active
 {
     border-left: 5px solid #000080;
-    color:#000080;
-   
+    color:#000080;  
 }*/
 .sidebar a i{
 font-size: 23px;
@@ -120,7 +119,7 @@ label #cancel
     margin-left: 200px;
 }
 
-
+/*responsive*/
 @media (max-width:860px){
     .sidebar{
 
