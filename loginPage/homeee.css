@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+*{margin:0px;
+padding: 0;
+text-decoration: none;
+
+}
+.sidebar{
+position: fixed;
+left: -240px;
+width: 240px;
+height: 100%;
+background:#17a2b8;
+transition: all .5s ease;
+margin-top: -20px;
+z-index: 1;
+
+
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    height: 65px;
+    width:100%;
+
+    line-height:65px;
+    padding-left:30px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    border-top: 1px solid black;
+    border-left: 5px solid transparent;
+    box-sizing:border-box;
+    transition: all .5s ease;
+    font-family: 'open sans',sans-serif;
+}
+/*a:hover, a.active
+{
+    border-left: 5px solid #000080;
+    color:#000080;
+   
+}*/
+.sidebar a i{
+font-size: 23px;
+margin-right: 16px;
+
+
+}
+.sidebar a span{
+letter-spacing: 1px;
+text-transform: uppercase;
+
+}
+#check {
+    display: none;
+}
+.add{
+     border-bottom: 1px white;
+      border-top: 1px white  ;
+}
+label #btn, label #cancel
+{
+
+    position: fixed;
+    cursor: pointer;
+    background: #17a2b8;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    border-radius: 5px;
+    margin: 15px 30px;
+    margin-top: 5px;
+    border: 1px solid #00CED1;
+    transition: all .5s ease;
+
+}
+label #cancel
+{
+    opacity: 0;
+    visibility: hidden;
+}
+#check:checked ~ label #btn{
+    margin-left: 245px;
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #cancel{
+    margin-left: 245px;
+    margin-top: -8px;
+    opacity: 1;
+    visibility: visible;
+    
+}
+#check:checked ~ .sidebar{
+    left: 0;
+    margin-top: -23.9px;
+}
+
+
+.block
+{
+    float: right;
+    margin-right: 15px;
+    padding-right: 10px;
+}
+#inc{
+    margin-right: 10px;
+}
+
+.inc{
+    float: right;
+    margin-top: 4px;
+}
+.exp{
+    float: right;
+}
+.charrt{
+    margin-left: 200px;
+}
+
+
+@media (max-width:860px){
+    .sidebar{
+
+        height: auto;
+        width:70px;
+        left:0;
+        margin: 100px 0;
+        margin-top: 15px;
+    }
+     #btn,#cancel{
+        display: none;
+    }
+    span{
+position: absolute;
+margin-left: 23px;
+opacity: 0;
+visibility: hidden;
+
+
+    }
+    .sidebar a i{
+        margin-left: -10px;
+    }
+    a:hover{
+        width:200px;
+background: inherit;
+    }
+    .sidebar a:hover span{
+        opacity:1 ;
+        visibility: visible;
+    }
+   
+
+    
+        
+}
